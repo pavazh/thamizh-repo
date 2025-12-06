@@ -1,5 +1,5 @@
 
-name: Hello World Workflow
+name: CronTime
 
 on:
   schedule:
