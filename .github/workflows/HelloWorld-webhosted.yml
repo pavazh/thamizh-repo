@@ -1,0 +1,15 @@
+name: Hello World Test
+ 
+on:
+  workflow_dispatch: # Manual trigger
+  push:               # Optional: Runs on push
+ 
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest  # GitHub-hosted runner
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+ 
+      - name: Print Hello World
+        run: echo "Hello World from GitHub-hosted runner!"
